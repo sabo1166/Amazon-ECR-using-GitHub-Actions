@@ -1,4 +1,3 @@
-```yaml
 name: Docker Build and Push to Amazon ECR
 
 on:
@@ -55,4 +54,4 @@ jobs:
           tags: |
             ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY }}:${{ github.sha }}
             ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY }}:latest
-```
+
